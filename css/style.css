@@ -1,2 +1,63 @@
 /* this is the import link from google fonts, which I will be using across my site - I've added two fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Handlee: 100,200,300,400,500,600,700|Spicy+Rice:100,200,300,400,500,600,700');
+
+/*----------------------------------------------------------Background images*/
+
+/*I got the first 5 lines of code from https://css-tricks.com/perfect-full-page-background-image/*/
+.landing-image {
+    background: url(../assets/images/landing.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*-----------------------------------------------------------------------Text*/
+
+.nav-link-heading {
+    font-family: 
+}
+
+/*-------------------------------------------------------------------Overlays*/
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------------------------------------------Nav*/
+
+.navbar {
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar-collapse {
+    width: 100%;
+    height: 100vh;
+    background-color: #520051;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 50%;
+}
+
+.navbar-nav {
+    position: relative;
+    top: 100px;
+}
+
+/*---------------------------------------------------------------------Footer*/
+
