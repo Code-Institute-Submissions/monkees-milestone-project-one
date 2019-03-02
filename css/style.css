@@ -21,6 +21,10 @@
 
 /*----------------------------------------------------------Background colors*/
 
+body {
+    background-color: #52011c;
+}
+
 .jumbotron {
     background-color: transparent;
 }
@@ -48,6 +52,8 @@
     color: #28a745;
     vertical-align: sub;
     padding-right: 10px;
+    padding-top: 5px;
+    margin-bottom: 4px;
 }
 
 /*--------------------------------------------------------------------Buttons*/
@@ -97,7 +103,7 @@
 .lower {
     width: 100%;
     background-color: transparent;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
@@ -251,6 +257,24 @@
 #op:not(:checked)~.overlay-hugeinc nav ul {
     -webkit-transform: translateY(-50%) rotateX(-35deg);
     transform: translateY(-50%) rotateX(-35deg);
+}
+
+/*---------------------------------------------------------------------Section*/
+
+.band-cards-wrapper {
+    margin-top: 80px;
+}
+
+.section-header {
+    padding-left: 5px;
+}
+
+.section-header-text {
+    font-family: "Spicy Rice", sans-serif;
+    font-size: 54px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #f75a00;
 }
 
 /*---------------------------------------------------------------------Footer*/
