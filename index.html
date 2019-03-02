@@ -16,43 +16,44 @@
 
 <body>
 
-    <!--nav same across every page ***used sample code from bootstrap and tailored it to my requirements***-->
-    <nav class="navbar navbar-dark position-fixed">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fas fa-bars"></i></span>
-        </button>
-        <!--the socaial-links in the nav will only be visible on md, lg and xl viewports-->
-        <ul class="list-unstyled list-inline social-links d-none d-md-inline">
-            <li class="list-inline-item"><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" href="https://twitter.com/TheMonkees?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter fa-lg"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fab fa-youtube fa-lg"></i></a></li>
-        </ul>
-        <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <div class="monkees-logo">
-                <a href="index.html">
-                    <img class="logo" src="assets/images/logo.png" alt="Monkees Logo">
-                </a>
+    <!--header and nav-->
+    <header class="container-fluid nav-container">
+        <!--used sample modal code from https://codepen.io/vladaoleynik/pen/vExKxJ and tailored it to my requirements to create nav with full screen overlay menu-->
+        <input type="checkbox" id="op" class="d-none">
+        <div class="row lower">
+            <div class="nav-button-wrapper col-6">
+                <label for="op" class="burger-icon">
+                    <span><i class="fas fa-bars"></i></span>
+                </label>
             </div>
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link nav-link-heading" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-heading" href="band.html">Band</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-heading" href="music.html">Music</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-heading" href="tickets.html">Tickets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-heading" href="contact.html">Contact</a>
-                </li>
-            </ul>
+            <!--the socaial-links in the nav will only be visible on md, lg and xl viewports-->
+            <div class="social-links-wrapper col-6">
+                <ul class="list-unstyled list-inline social-links d-none d-md-inline">
+                    <li class="list-inline-item"><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://twitter.com/TheMonkees?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fab fa-youtube fa-lg"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <!--/nav-->
+        <!--clicking the hamburger icon initiates the below full overlay menu-->
+        <div class="overlay overlay-hugeinc">
+            <div class="row overlay-nav">
+                <div class="col-12 logo-container text-center">
+                    <img class="logo" src="assets/images/logo.png" alt="Monkees Logo">
+                </div>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="band.html">Band</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--/header and nav-->
 
     <!--section-->
     <div class="container-fluid landing-image">
@@ -61,9 +62,9 @@
             <div class="col-12">
                 <!--used sample jumbotron code from bootstrap and tailored it to my requirements-->
                 <section class="jumbotron text-center">
-                    <h1 class="jumbotron-title text-uppercase">The Monkees</h1>
-                    <hr>
-                    <p class="jumbotron-p d-lg-inline">Want the latest news?</p>
+                    <h1 class="jumbotron-title">The<br>Monkees</h1>
+                    <hr class="jumbotron-hr">
+                    <p class="jumbotron-p d-lg-inline"><strong>Want the latest news?</strong></p>
                     <!--used sample modal code from bootstrap and tailored it to my requirements-->
                     <button type="button" class="btn btn-success btn-cta" data-toggle="modal" data-target="#newsletterModal">
                         Sign Up!
@@ -76,24 +77,26 @@
 
     <!--footer-->
     <footer class="container-fluid fixed-bottom d-md-none text-center">
-        <div class="col-12">
-            <ul class="list-unstyled list-inline social-links">
-                <li class="list-inline-item"><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-                <li class="list-inline-item"><a target="_blank" href="https://twitter.com/TheMonkees?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter fa-lg"></i></a></li>
-                <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fab fa-youtube fa-lg"></i></a></li>
-            </ul>
+        <div class="row">
+            <div class="col-12">
+                <!--the socaial-links in the footer will only be visible on xs and sm viewports-->
+                <ul class="list-unstyled list-inline social-links">
+                    <li class="list-inline-item"><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://twitter.com/TheMonkees?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fab fa-youtube fa-lg"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <!--/footer-->
 
-
     <!--modal-->
     <!--used sample modal code from bootstrap and tailored it to my requirements ***linked to cta sign up btn***-->
-    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModal" aria-hidden="true">
+    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="newsletterModal">Sign Up For The Latest News!</h5>
+                    <h5 class="modal-title" id="signUpModal">Sign Up For The Latest News!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -105,7 +108,7 @@
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" id="email" placeholder="Email" required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <small id="emailHelp" class="form-text modal-helper-text">We'll never share your email with anyone else.</small>
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>
                     </form>

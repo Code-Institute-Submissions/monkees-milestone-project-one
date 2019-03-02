@@ -4,7 +4,8 @@
 
 /*----------------------------------------------------------Background images*/
 
-/*I got the first 5 lines of code from https://css-tricks.com/perfect-full-page-background-image/*/
+/*first 5 lines of code from https://css-tricks.com/perfect-full-page-background-image/*/
+
 .landing-image {
     background: url(../assets/images/landing.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -18,10 +19,66 @@
     position: relative;
 }
 
+/*----------------------------------------------------------Background colors*/
+
+.jumbotron {
+    background-color: transparent;
+}
+
 /*-----------------------------------------------------------------------Text*/
 
-.nav-link-heading {
-    font-family: 
+.jumbotron-title {
+    font-family: "Spicy Rice", sans-serif;
+    font-size: 54px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #f75a00;
+}
+
+.jumbotron-hr {
+    width: 125px;
+    height: 5px;
+    background-color: #52011c;
+    border-radius: 50%;
+}
+
+.jumbotron-p {
+    font-family: "Handlee", sans-serif;
+    font-size: 25px;
+    color: #28a745;
+    vertical-align: sub;
+    padding-right: 10px;
+}
+
+/*--------------------------------------------------------------------Buttons*/
+
+.btn-success {
+    color: #fafafa;
+    background-color: #f75a00;
+    border-color: #f75a00;
+    border-radius: 21px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success.focus, .btn-success:focus {
+    background-color: #ca4b02;
+    border-color: #ca4b02;
+}
+
+.btn-success:active,
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success.focus, .btn-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(202,75,2,.5);
 }
 
 /*-------------------------------------------------------------------Overlays*/
@@ -37,27 +94,197 @@
 
 /*------------------------------------------------------------------------Nav*/
 
-.navbar {
-    z-index: 2;
+.lower {
     width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-.navbar-collapse {
+.burger-icon {
+    padding-top: 10px;
+    padding-left: 18px;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.8;
+    color: #f75a00;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.burger-icon:hover {
+    color: #ca4b02;
+    cursor: pointer;
+}
+
+.social-links-wrapper {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 5px;
+}
+
+.social-links {
+    padding-top: 15px;
+}
+
+.social-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 13px 9px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fafafa;
+    background: #f75a00;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #ca4b02;
+}
+
+.overlay {
+    position: fixed;
     width: 100%;
-    height: 100vh;
-    background-color: #520051;
-    border-radius: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #52011C;
+    z-index: 1;
+}
+
+.logo-container {
+    top: 15px;
 }
 
 .logo {
-    width: 150px;
-    height: 50%;
+    width: 100px;
+    height: 75px;
 }
 
-.navbar-nav {
+.overlay nav {
+    text-align: center;
     position: relative;
-    top: 100px;
+    top: 40%;
+    height: 50%;
+    font-size: 40px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    height: calc(100% / 5);
+    min-height: 40px;
+}
+
+.overlay ul li a {
+    font-family: "Spicy Rice", sans-serif;
+    font-weight: 300;
+    display: block;
+    color: #f75a00;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: #ca4b02;
+}
+
+.lower~.overlay-hugeinc {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.overlay-hugeinc {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+    -moz-perspective: 300px;
+}
+
+.overlay-hugeinc nav ul {
+    opacity: 0.4;
+    -webkit-transform: translateY(-25%) rotateX(35deg);
+    transform: translateY(-25%) rotateX(35deg);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#op:checked~.overlay-hugeinc nav ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+#op:not(:checked)~.overlay-hugeinc nav ul {
+    -webkit-transform: translateY(-50%) rotateX(-35deg);
+    transform: translateY(-50%) rotateX(-35deg);
 }
 
 /*---------------------------------------------------------------------Footer*/
+
+
+
+/*----------------------------------------------------------------------Modal*/
+
+.modal-content {
+    background-color: #52011c;
+    text-align: center;
+}
+
+.modal-title {
+    font-family: "Spicy Rice", sans-serif;
+    color: #f75a00;
+    letter-spacing: 2px;
+}
+
+.modal-header .close {
+    font-weight: 900;
+    color: #f75a00
+}
+
+.modal-header .close:hover,
+.modal-header .close:active,
+.modal-header .close:focus {
+    color: #ca4b02
+}
+
+.modal-helper-text {
+    font-family: "Handlee", sans-serif;
+    color: #28a745;
+}
+
+.modal-body .form-control {
+    border-radius: 1.25rem;
+}
 
