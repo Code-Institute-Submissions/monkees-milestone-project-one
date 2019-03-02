@@ -42,7 +42,7 @@
     border-radius: 50%;
 }
 
-.jumbotron-p {
+.signup-p {
     font-family: "Handlee", sans-serif;
     font-size: 25px;
     color: #28a745;
@@ -131,7 +131,8 @@
     padding-top: 15px;
 }
 
-.social-links li a i {
+.social-links li a i,
+.social-links-footer li a i {
     width: 40px;
     height: 40px;
     padding: 13px 9px;
@@ -145,7 +146,8 @@
     -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links li a i:hover {
+.social-links li a i:hover,
+.social-links-footer li a i:hover {
     background: #ca4b02;
 }
 
