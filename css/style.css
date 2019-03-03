@@ -277,6 +277,33 @@ body {
     color: #f75a00;
 }
 
+.card {
+    max-height: 400px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border: none;
+    margin: 20px 0;
+}
+
+.card-body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card-title {
+    font-family: "Spicy Rice", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f75a00;
+}
+
+.card-text {
+    font-family: "Handlee", sans-serif;
+    font-size: 16px;
+    color: #fafafa;
+}
+
 /*---------------------------------------------------------------------Footer*/
 
 
