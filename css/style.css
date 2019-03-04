@@ -320,6 +320,38 @@ body {
     color: #f75a00;
 }
 
+.section-text-wrapper {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.section-text {
+    font-family: "Handlee", sans-serif;
+    font-size: 16px;
+    color: #fafafa;
+}
+
+.section-img-left {
+    height: 250px;
+    width: 190px;
+    float: left;
+    padding-right: 10px;
+}
+
+.return a {
+    color: #f75a00;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.return a:hover {
+    color: #ca4b02;
+    text-decoration: none;
+}
+
 /*---------------------------------------------------------------------Footer*/
 
 
