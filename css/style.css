@@ -271,9 +271,9 @@ body {
 
 .section-header-text {
     font-family: "Spicy Rice", sans-serif;
-    font-size: 54px;
+    font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     color: #f75a00;
 }
 
@@ -351,6 +351,65 @@ body {
     color: #ca4b02;
     text-decoration: none;
 }
+
+.discography-timeline {
+    margin-left: 5px;
+}
+
+.discography-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #f75a00;
+    border-left: 1px solid;
+}
+
+.discography-item .discography-heading {
+    margin:0;
+}
+
+.discography-item::before {
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 2.3em;
+    display: block;
+    font-family: "Handlee", sans-serif;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+
+.discography-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.discography-items {
+    margin-bottom: 20px;
+}
+
+.discography-heading a {
+    font-family: "Handlee", sans-serif;
+    color: #fafafa;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.discography-heading a:hover {
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+
 
 /*---------------------------------------------------------------------Footer*/
 
