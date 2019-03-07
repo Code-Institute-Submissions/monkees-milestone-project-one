@@ -310,6 +310,7 @@ body {
 
 .carousel-inner {
     border: 2px solid #f75a00;
+    border-radius: 10px;
 }
 
 .carousel-indicators li {
@@ -409,7 +410,42 @@ body {
     text-decoration: none;
 }
 
+.iframe-img {
+    margin-top: 20px;
+}
 
+.iframe-img img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.iframe-one,
+.iframe-two {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.iframe-one iframe,
+.iframe-two iframe {
+    margin: 0 auto;
+    width: 75%;
+    height: 500px;
+    border: 3px solid #f75a00;
+    border-radius: 5px;
+}
+
+.follow-wrapper {
+    margin: 20px;
+}
+
+.follow-wrapper iframe {
+    border: 3px solid #f75a00;
+    border-radius: 5px;
+}
 
 /*---------------------------------------------------------------------Footer*/
 
