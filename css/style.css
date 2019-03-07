@@ -74,7 +74,8 @@ body {
 .btn-success:not(:disabled):not(.disabled).active,
 .btn-success:not(:disabled):not(.disabled):active,
 .btn-success:not(:disabled):not(.disabled):active:focus,
-.btn-success.focus, .btn-success:focus {
+.btn-success.focus,
+.btn-success:focus {
     background-color: #ca4b02;
     border-color: #ca4b02;
 }
@@ -83,8 +84,9 @@ body {
 .btn-success:not(:disabled):not(.disabled).active,
 .btn-success:not(:disabled):not(.disabled):active,
 .btn-success:not(:disabled):not(.disabled):active:focus,
-.btn-success.focus, .btn-success:focus {
-    box-shadow: 0 0 0 0.2rem rgba(202,75,2,.5);
+.btn-success.focus,
+.btn-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(202, 75, 2, .5);
 }
 
 /*-------------------------------------------------------------------Overlays*/
@@ -365,7 +367,7 @@ body {
 }
 
 .discography-item .discography-heading {
-    margin:0;
+    margin: 0;
 }
 
 .discography-item::before {
@@ -421,11 +423,15 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    animation: spin 4s linear infinite;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    -o-animation: spin 4s linear infinite;
 }
 
 .iframe-one,
 .iframe-two {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -442,14 +448,25 @@ body {
     margin: 20px;
 }
 
-.follow-wrapper iframe {
-    border: 3px solid #f75a00;
-    border-radius: 5px;
+.tracks-wrapper {
+    margin-bottom: 20px;
+}
+
+.audio-text,
+.video-text {
+    font-family: "Handlee", sans-serif;
+    color: #fafafa;
+}
+
+.audio-wrapper {
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
 }
 
 /*---------------------------------------------------------------------Footer*/
-
-
 
 /*----------------------------------------------------------------------Modal*/
 
@@ -484,3 +501,13 @@ body {
     border-radius: 1.25rem;
 }
 
+/*------------------------------------------------------------------Keyframes*/
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
