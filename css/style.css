@@ -58,11 +58,15 @@ body {
 
 /*--------------------------------------------------------------------Buttons*/
 
+.btn {
+    border-radius: 21px;
+    text-transform: uppercase;
+}
+
 .btn-success {
     color: #fafafa;
     background-color: #f75a00;
     border-color: #f75a00;
-    border-radius: 21px;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -263,7 +267,8 @@ body {
 
 /*---------------------------------------------------------------------Section*/
 
-.band-cards-wrapper {
+.band-cards-wrapper,
+.tickets-wrapper {
     margin-top: 80px;
 }
 
@@ -291,7 +296,8 @@ body {
     overflow-x: hidden;
 }
 
-.card-title {
+.card-title,
+.tour-dates-title {
     font-family: "Spicy Rice", sans-serif;
     font-size: 25px;
     text-transform: uppercase;
@@ -464,6 +470,25 @@ body {
 
 video {
     width: 100%;
+}
+
+.tour {
+    font-family: "Handlee", sans-serif;
+    color: #fafafa;
+    padding-left: 5px;
+}
+
+.tour-dates {
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.ticket-alert {
+    margin-bottom: 5px;
+    padding: 0;
+    border-radius: 15px;
 }
 
 /*---------------------------------------------------------------------Footer*/
