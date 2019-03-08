@@ -28,7 +28,7 @@
             </div>
             <!--the socaial-links in the nav will only be visible on md, lg and xl viewports-->
             <div class="social-links-wrapper col-6">
-                <ul class="list-unstyled list-inline social-links d-none d-md-inline">
+                <ul class="list-unstyled list-inline social-links d-none d-inline">
                     <li class="list-inline-item"><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fab fa-facebook-f fa-lg"></i></a></li>
                     <li class="list-inline-item"><a target="_blank" href="https://twitter.com/TheMonkees?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter fa-lg"></i></a></li>
                     <li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fab fa-youtube fa-lg"></i></a></li>
@@ -55,15 +55,175 @@
     </header>
     <!--/header and nav-->
 
+    <!--main page content-->
+    <section class="container-fluid form-wrapper">
+        <div class="row section-header">
+            <header class="col-12">
+                <h2 class="section-header-text">Book Us</h2>
+            </header>
+        </div>
+        <div class="row booking-form">
+            <!--used sample card code from bootstrap and tailored it to my requirements-->
+            <div class=" col-12">
+                <form action="/" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-12 text-center">
+                            <fieldset class="form-section">
+                                <legend class="form-legend">Personal Details</legend>
+                                <div class="form-row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="title">Title</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <select class="form-control" id="title" required>
+                                                    <option selected disabled>Title</option>
+                                                    <option>Mr</option>
+                                                    <option>Miss</option>
+                                                    <option>Ms</option>
+                                                    <option>Mrs</option>
+                                                    <option>Dr</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="name">Name</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-section">
+                                <legend class="form-legend">Function Details</legend>
+                                <div class="form-row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="functiontype">Type</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <select class="form-control" id="functiontype" required>
+                                                    <option selected disabled>Type</option>
+                                                    <option>Wedding</option>
+                                                    <option>Christmas Party</option>
+                                                    <option>Birthday Party</option>
+                                                    <option>Other (please specify in comments section)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="date">Date</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="date" class="form-control" id="date" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="partysize">Party Size</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="number" class="form-control" id="partysize" placeholder="Party size" min="20" max="99999999" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-section">
+                                <legend class="form-legend">Venue Details</legend>
+                                <div class="form-row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="venue">Venue name</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="text" class="form-control" id="venue" placeholder="Venue name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="address">Venue address</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="text" class="form-control" id="address" placeholder="Venue Address" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="postcode">Venue postcode</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <input type="text" class="form-control" id="postcode" placeholder="Postcode" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-section">
+                                <legend class="form-legend">Comments</legend>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <div class="form-row">
+                                            <div class="d-none">
+                                                <label for="comments">Comments</label>
+                                            </div>
+                                            <div class="col-12 form-content">
+                                                <textarea class="form-control" id="comments" rows="3" placeholder="Anything else we need to know? (optional)"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     
-
+    <section class="container-fluid return-link">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center section-text return"><a href="#top">Return to top</a></p>
+            </div>
+        </div>    
+    </section>
+    <!--main page content-->
     <!--footer-->
     <footer class="container-fluid footer-wrapper text-center">
         <div class="row">
             <div class="col-12 col-md-6 align-text-bottom text-md-left">
                 <p class="signup-p d-md-inline"><strong>Want the latest news?</strong></p>
                 <!--used sample modal code from bootstrap and tailored it to my requirements-->
-                <button type="button" class="btn btn-success btn-cta" data-toggle="modal" data-target="#newsletterModal">
+                <button type="submit" class="btn btn-success btn-cta" data-toggle="modal" data-target="#newsletterModal">
                     Sign Up!
                 </button>
             </div>

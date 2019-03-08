@@ -268,7 +268,8 @@ body {
 /*---------------------------------------------------------------------Section*/
 
 .band-cards-wrapper,
-.tickets-wrapper {
+.tickets-wrapper,
+.form-wrapper {
     margin-top: 80px;
 }
 
@@ -491,6 +492,40 @@ video {
     border-radius: 15px;
 }
 
+.booking-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 10px;
+}
+
+.form-section {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f75a00;
+    border-radius: 5px;
+}
+
+.form-legend {
+    font-family: "Handlee", sans-serif;
+    color: #fafafa;
+    margin-bottom: 0;
+    background-color: #f75a00;
+    border-radius: 1.25rem;
+}
+
+.form-content {
+    padding-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    font-family: "Handlee", sans-serif;
+}
+
 /*---------------------------------------------------------------------Footer*/
 
 /*----------------------------------------------------------------------Modal*/
@@ -522,9 +557,11 @@ video {
     color: #28a745;
 }
 
-.modal-body .form-control {
+.form-control {
     border-radius: 1.25rem;
 }
+
+
 
 /*------------------------------------------------------------------Keyframes*/
 
