@@ -1,11 +1,9 @@
 /* this is the import link from google fonts, which I will be using across my site - I've added two fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Handlee: 100,200,300,400,500,600,700|Spicy+Rice:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Spicy+Rice');
 
 /*----------------------------------------------------------Background images*/
 
 /*first 5 lines of code from https://css-tricks.com/perfect-full-page-background-image/*/
-
 .landing-image {
     background: url(../assets/images/landing.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
