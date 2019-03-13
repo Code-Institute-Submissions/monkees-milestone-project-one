@@ -95,18 +95,28 @@ Once I've learnt JavaScript and back-end web development, I will add further fun
 
 ## Technologies Used
 
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [**Balsamiq**](https://balsamiq.com/)
+    - I've used **Balsamiq** to create wireframes of my website before building the actual site.
+- [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
     - The project uses **HTML5** to create the basic elements and content of my website.
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+- [**CSS3**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
     - The project uses **CSS3** to add custom styles to the elements and content of my website.
-- [Bootstrap v4.3](https://getbootstrap.com/)
+- [**Bootstrap v4.3**](https://getbootstrap.com/)
     - The project uses **Bootstrap v4.3** to add a responsive grid system, prebuilt components, plugins built on jQuery, and Bootstrap styles to my website, before adding my custom styles.
-- [jQuery](https://jquery.com)
+- [**jQuery**](https://jquery.com)
     - The project uses **jQuery** to simplify DOM manipulation. This is the standard jQuery that is built with Bootstrap components.
-- [Google Fonts](https://fonts.google.com/)
+- [**JavaScript**](https://www.javascript.com/)
+    - The project uses **JavaScript** from Bootstrap which is required to add functionality to some of Bootstrap's components.
+- [**Google Fonts**](https://fonts.google.com/)
     - The project uses **Google Fonts** to style the text and suit the style of the band.
-- [Font Awesome](https://fontawesome.com/)
+- [**Font Awesome**](https://fontawesome.com/)
     - The project uses **Font Awesome** for the social media links and the hamburger button on my website.
+- [**Cloud9**](https://c9.io/login)
+    - I've used **Cloud9** as the development environment to write the code for my website.
+- [**Git**](https://git-scm.com/)
+    - I've used **Git** as a version control system to regularly add and commit changes made to project in Cloud9, before pushing them to GitHub.
+- [**GitHub**](https://github.com/)
+    - I've used **GitHub** as a remote repository to push and store the committed changes to my project from Git. I've also used GitHub pages to deploy my website in a live environment.
 
 ## Testing
 
