@@ -61,8 +61,8 @@ There are some differences between my wireframes and my final website. This was 
 - **Spinning music discs** - This is purely visual and gives users a sense that music is playing. These discs constantly spin though, which is due to a limitation as I haven't yet learned JavaScript to make them start and stop spinning when certain actions are completed.
 - **iframes** - The iframe embeds contains two of the band's albums on Spotify. Users can click each of the songs and listen to a 30 second preview of them. They are then redirected to the Spotify album page to either log in or sign up.
 - **Spotify 'Follow' widget** - Allows users to click the 'Follow' button to follow the band on Spotify. If the user isn't signed in to Spotify, clicking the button opens a new window that allows users to login to their Spotify profile to then follow the band.
-- **Audio tracks with controls** - Allows users to listen to the relevant track using the controls. Users can also download an mp3 copy of the track to their local drive by using the controls.
-- **Video with controls** - Allows users to watch the video using the controls. Users can watch the video on full-screen, and they can also download a copy of the video to their local drive by using the controls.
+- **Audio tracks with controls** - Allows users to listen to the relevant track using the controls. Users can also download an mp3 copy of the track to their local drive on a desktop by using the controls.
+- **Video with controls** - Allows users to watch the video using the controls. Users can watch the video on full-screen, and they can also download a copy of the video to their local drive on a desktop by using the controls.
 
 #### tickets.html
 
@@ -120,44 +120,83 @@ Once I've learnt JavaScript and back-end web development, I will add further fun
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Testing User Stories
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I used my user stories and documented each of the steps that each user would need to accomplish what they have stated. Below is the link to the document that contains this information:
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Responsive Testing
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+I used Google Chrome's Development tools to constantly test each change that I made to my website and that it appeared in the desired way on different screen sizes. I also tested my website on different screen sizes (mobile, tablet and desktop) to ensure it appeared in the desired way on different devices.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+To test my whole website, I went through each page, feature by feature, and documented the results on a spreadsheet. The spreadsheet also documents any responsive features and confirms that they work and appear as intended on different screen sizes. The link to the spreadsheet it below:
+
+
+
+### HTML and CSS Validation
+
+I used the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) to validate my HTML code.
+
+I used the [W3C CSS Validator tool](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS code.
+
+### Interesting Bugs or Problems
+
+- **Burger icon** - The burger icon wasn't appearing once the fullscreen overlay menu was triggered. The reason for this is that the header in which the burger icon was in had a lower z-index than the overlay menu. To fix the issue, I gave the header a higher z-index value than the overlay menu.
+- **'dates' attribute** - For the discography timeline, I used the sample code from the code used within the Resume mini project. The sample code used the `dates` attribute. However, the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) stated that this was invalid. When I looked on Slack, I saw that another student had the same issue, and the advice they received was to use the `data-year` attribute instead. I tried this and it resolve the issue.
+- **'Submit' button on *Book Us* form** - Once I entered the information and submitted the form, the form kept routing me through to the index.html page. After speaking with my mentor, he asked me to check the value of the `action` attribute of the `<form>` element. The issue was that the value I was using was `action="/"`. Once I changed this to `action="contact.html"` the issue was resolved.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+The hosting platform that I've used for my project is GitHub Pages. To deploy my website to GitHub pages, used the following steps:
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+1. Loaded the terminal window in my Cloud9 workspace.
+2. Initialised git using the `git init` command.
+3. Added all files to the Staging area (Git) using the `git add .` command.
+4. Committed the files to Git using the `git commit -m "Initial commit"` command.
+5. Created a new repository in GitHub called 'monkees-milestone-project-one'.
+6. Copied the below code from GitHub into my Cloud9 workspace:
+```git remote add origin https://github.com/hebs87/monkees-milestone-project-one.git```
+```git push -u origin master```
+7. Entered my GitHub username and password to push the files from Git to GitHub.
+8. Went into 'Settings' on my repository page in GitHub.
+9. Selected the 'master branch' option under the 'GitHub Pages' section.
+10. Ran several regular commits throughout my project.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
-"Take files, put them on the local drive and then run the site"
+### Repository Link
+
+https://hebs87.github.io/monkees-milestone-project-one/
+
+### Running Code Locally
+
+To run my code locally, users can download a local copy of my code to their desktop by completing the following steps:
+
+1. Go to [my GitHub repository](https://github.com/hebs87/monkees-milestone-project-one.git).
+2. Click on 'Clone or download'
+3. Click on 'Download ZIP'
+4. Once dowloaded, extract the zip file's contents and run my website locally.
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+- The text for Davy Jones' band card was copied from [Davy Jones' Wikipedia page](https://en.wikipedia.org/wiki/Davy_Jones_(musician)
+- The text for Micky Dolenz's band card was copied from [Micky Dolenz's Wikipedia page](https://en.wikipedia.org/wiki/Micky_Dolenz)
+- The text for Michael Nesmith's band card was copied from [Michael Nesmith's Wikipedia page](https://en.wikipedia.org/wiki/Michael_Nesmith)
+- The text for Peter Tork's band card was copied from [Peter Tork's Wikipedia page](https://en.wikipedia.org/wiki/Peter_Tork)
+- The text for the 'Band History' section and the discography information was copied from [The Monkees' Wikipedia page](https://en.wikipedia.org/wiki/The_Monkees)
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained either from the assets provided with the course content, or from Google images. I made sure any Google images were "free to use or share, even commercially".
+- The audio tracks used in this site were obtained from the assets provided with the course content.
+- The video track used in this site was obtained from the assets provided with the course content.
+- The link for the iframe content for the *'Monkeemania: The Very Best Of The Monkees'* album was obtained from [the album's Spotify page](https://open.spotify.com/album/1mOeF3Ew1vdmJLbGOG2CuP).
+- The link for the iframe content for the *'Monkees Greatest Hits'* album was obtained from [the album's Spotify page](https://open.spotify.com/playlist/7mbzl6fkxbayOw7OwjDMHG).
+- The follow button embed code was obtained from [the band's Spotify page](https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck)
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for the full screen overlay menu when I was looking at websites for other bands. I came across the website for the band called [The Specials](https://www.thespecials.com/) and wanted to incorporate a similar menu in my project.
+- I received inspiration for the spinning music discs from my fiancee. When she looked at my website, she suggested this as some sylistic feedback.
+- I received some information from the Slack community to help me to fix an error with the `dates` attribute in the discography timeline.
+- A special mention to my mentor, Dick Vlaanderen, for his feedback on my project's scope and design, and for hints on what information to include in my README.md file to justify my stylistic choices.
