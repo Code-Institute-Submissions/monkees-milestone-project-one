@@ -1,12 +1,12 @@
 # The Monkees Website - Milestone Project One
 
-This is a website for the band, **_The Monkees_**. My website will be used by existing, new and prospective fans and event planners to find out more about the band and its members. They can also listen to the band's music and sign up to the newsletter to keep up to date on the latest news and new music releases. Each page contains links to the band's social media pages.
+This is a website that I created for the band, **_The Monkees_**. My website will be used by existing, new and prospective fans and event planners to find out more about the band and its members. They can also listen to the band's music and sign up to the newsletter to keep up to date on the latest news and new music releases. Each page contains links to the band's social media pages.
 
 Users can use my website to book tickets for the band's upcoming concerts, and they will have the ability to book the band to perform at their upcoming events through the contact form.
 
 ## UX
 
-My website is for current and potential fans and event planners, who are looking to follow the band, listen to their music, book tickets and book the band to perform at their events. My website provides a *"one-stop-shop"* for users, to help them to achieve all of these things, along with several links to the band's external social media and wikipedia pages.
+My website is for current and potential fans and event planners, who are looking to follow the band, listen to their music, book tickets and book the band to perform at their events. My website provides a *"one-stop-shop"* for users, to help them to achieve all of these things, along with several links to the band's external social media and Wikipedia pages.
 
 I've chosen to style my website in the way that I have, as I felt that it best reflected the brand of the band. The band were at their peak during the late 60s, 70s and 80s, so the fonts and colour scheme that I've chosen best reflect this era and create a feeling of authenticity for users.
 
@@ -24,9 +24,18 @@ I've chosen to style my website in the way that I have, as I felt that it best r
 
 ### Wireframes
 
-I drew my wireframes using Balsamiq. All wireframes are contained in a single file, and it includes my consideration of how to make my webssite responsive. The link to the file is below:
+I drew my wireframes using Balsamiq. I have done two wireframes for each page to show my consideration of how to make my website responsive. The links to the files are below:
 
-
+- [index.html (xl and sm)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/index-wireframe-1.png)
+- [index.html (md, lg and xl)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/index-wireframe-2.png)
+- [band.html (xl and sm)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/band-wireframe-1.png)
+- [band.html (md, lg and xl)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/band-wireframe-2.png)
+- [music.html (xl and sm)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/music-wireframe-1.png)
+- [music.html (md, lg and xl)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/index-wireframe-2.png)
+- [tickets.html (xl and sm)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/tickets-wireframe-1.png)
+- [tickets.html (md, lg and xl)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/tickets-wireframe-2.png)
+- [contact.html (xl and sm)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/contact-wireframe-1.png)
+- [contact.html (md, lg and xl)](https://github.com/hebs87/monkees-milestone-project-one/blob/master/wireframes/contact-wireframe-2.png)
 
 There are some differences between my wireframes and my final website. This was due to visual preferences and feedback received from other users who tested my website.
 
@@ -40,7 +49,7 @@ There are some differences between my wireframes and my final website. This was 
 - **Modal with built in form and submit button** - The modal is triggered by the 'Sign Up!' call to action button, and allows users to complete a form and submit their details to sign up to the band's newsletter. Each of the form's fields are required. Currently, no further action is taken when the 'Submit' button is clicked - this is a limitation due to the scope of the project.
 - **Hamburger button** - Clicking the hamburger button triggers a full screen overlay menu containing the navigation links to all pages on my website. The user can click the links to navigate to the relevant webpage.
 - **Social media links** - Each link opens a new page with the relevant social media page for the band (Facebook, Twitter and YouTube). These links make it easy for users to access the band's social media profiles from one place. The social media profiles load in a new tab, which allows users to then return to the site.
-- **Full screen overlay menu** - The full screen overlay menu contains navigation links which redirect the user to the different pages of my website. The social media links are displayed in the top right hand corner of the medium to extra large screens.
+- **Full screen overlay menu** - The full screen overlay menu contains navigation links which redirect the user to the different pages of my website. The social media links are displayed in the top right hand corner of medium to extra large screens.
 - **Navigation links** - Allows users to navigate around my website by clicking each navigation link, which redirects them to the relevant webpage.
 
 #### All Pages (exluding index.html)
@@ -66,7 +75,7 @@ There are some differences between my wireframes and my final website. This was 
 
 #### tickets.html
 
-- **'Book Now' button call to action button** - This is a button which users are able to click, and it allows them to then complete further steps to receive instructions on how to finalise their ticket booking.
+- **'Book Now' call to action button** - This is a button which users are able to click, and it allows them to then complete further steps to receive instructions on how to finalise their ticket booking.
 - **Modal with built in form and submit button** - The modal is triggered by the 'Book Now' call to action button, and allows users to complete a form and submit their details to receive instructions on how to finalise their ticket booking. Each of the form's fields are required. Currently, no further action is taken when the 'Submit' button is clicked - this is a limitation due to the scope of the project.
 - **'Limited availability' alert** - This is a banner above the 'Book Now' button that alerts the user to the fact that there is limited ticket availability for that particular concert.
 - **'Sold Out' disabled button** - This button allows the user to see that the particular concert is sold out. The button is disabled and is for information purposes only.
@@ -74,7 +83,7 @@ There are some differences between my wireframes and my final website. This was 
 #### contact.html
 
 - **Form with submit button** - Allows users to book the band to perform at their events by completing the form and submitting their details. Currently, no further action is taken when the 'Submit' button is clicked - this is a limitation due to the scope of the project.
-- **Form dropdowns** - Some of the forms input fields have dropdowns, which allows users to select the relevant option from a list of options.
+- **Form dropdowns** - Some of the form's input fields have dropdowns, which allows users to select the relevant option from a list of options.
 - **Form date selector** - Allows users to choose the desired date that they want to book the band by clicking the date selector icon, which displays a calendar. 
 - **Form number input field with min and max range** - Allows users to input the number of attendants to the event by either typing the number directly into the input field, or by using the higher or lower selectors. This field has a minimum value of 20 and a maximum value of 999999999.
 
@@ -83,14 +92,14 @@ There are some differences between my wireframes and my final website. This was 
 Once I've learnt JavaScript and back-end web development, I will add further functionality to the existing features on my website.
 
 - **'Sign Up!' modal action** - I will add further functionality to the 'Submit' button so that it displays an on-screen 'Thank you' message. I will also add functionality for an email to be sent to users to confirm that they have successfully signed up for the band's newsletter.
-- **Hamburger button** - I will add functionality for the burger button to change to a close icon once the full screen overlay menu is triggered and displayed.
+- **Hamburger button** - I will add functionality for the burger button to change to a 'X' icon once the full screen overlay menu is triggered and displayed.
 - **Full screen overlay menu** - I will improve the display and functionality of the full screen overlay menu, which will in turn reduce the amount of CSS code that I've had to use instead.
 - **Spinning music discs** - I will add functionality to these discs so that they are triggered to spin when the user plays the music within the relevant iframe, and they will stop spinning when the music is stopped.
-- **Audio and video controls** - I will add personal styles to the existing audio and video controls so that they also reflect the brand of the band and the theme of the website, and so that they appear the same in all browsers.
+- **Audio and video controls** - I will add custom styles to the existing audio and video controls so that they also reflect the brand of the band and the theme of the website, and so that they appear the same in all browsers.
 - **'Book Now' modal action** - I will add further functionality to the 'Submit' button so that it displays an on-screen 'Thank you' message. I will also add functionality for an email to be sent to users with further instructions to complete the ticket booking process.
 - **'Limited availability' alert** - I will add functionality to the 'Limited availability' alert so that it is only displayed when there is a limited availability of tickets for that particular concert.
-- **'Sold Out' disabled button** - I will add functionality to the 'Sold Out' button so that it is only displayed when there the particular concert is sold out. This will require the 'Book Now' button to change to a 'Sold Out' button in this event.
-- **Form with submit button on contact.html page** - I will add functionality to the 'Submit'button so that it displays an on-screen 'Thanks for booking us!' message. I will also add functionality for an email to be sent to users to confirm that they have booked the band for their event.
+- **'Sold Out' disabled button** - I will add functionality to the 'Sold Out' button so that it is only displayed when the particular concert is sold out. This will require the 'Book Now' button to change to a 'Sold Out' button in this event.
+- **Form with submit button on contact.html page** - I will add functionality to the 'Submit' button so that it displays an on-screen 'Thanks for booking us!' message. I will also add functionality for an email to be sent to users to confirm that they have booked the band for their event.
 - **Form date selector** - I will add functionality to the date selector icon to change it to a calendar icon. I will also add my custom styles to the calendar and improve the fuctionality so that it greys out any dates that have already been booked, or when the band is unavailable.
 
 ## Technologies Used
@@ -124,15 +133,15 @@ Once I've learnt JavaScript and back-end web development, I will add further fun
 
 I used my user stories and documented each of the steps that each user would need to accomplish what they have stated. Below is the link to the document that contains this information:
 
-
+- [Testing User Stories](https://github.com/hebs87/monkees-milestone-project-one/blob/master/testing-documents/testing-user-stories.pdf)
 
 ### Responsive Testing
 
-I used Google Chrome's Development tools to constantly test each change that I made to my website and that it appeared in the desired way on different screen sizes. I also tested my website on different screen sizes (mobile, tablet and desktop) to ensure it appeared in the desired way on different devices.
+I used Google Chrome's Development tools to constantly test each change that I made to my website and to ensure that it appeared in the desired way on different screen sizes. I also tested my website on different screen sizes (mobile, tablet and desktop) to ensure it appeared in the desired way on different devices.
 
 To test my whole website, I went through each page, feature by feature, and documented the results on a spreadsheet. The spreadsheet also documents any responsive features and confirms that they work and appear as intended on different screen sizes. The link to the spreadsheet it below:
 
-
+- [Testing Checklist](https://github.com/hebs87/monkees-milestone-project-one/blob/master/testing-documents/testing-checklist.pdf)
 
 ### HTML and CSS Validation
 
@@ -143,21 +152,24 @@ I used the [W3C CSS Validator tool](https://jigsaw.w3.org/css-validator/#validat
 ### Interesting Bugs or Problems
 
 - **Burger icon** - The burger icon wasn't appearing once the fullscreen overlay menu was triggered. The reason for this is that the header in which the burger icon was in had a lower z-index than the overlay menu. To fix the issue, I gave the header a higher z-index value than the overlay menu.
-- **'dates' attribute** - For the discography timeline, I used the sample code from the code used within the Resume mini project. The sample code used the `dates` attribute. However, the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) stated that this was invalid. When I looked on Slack, I saw that another student had the same issue, and the advice they received was to use the `data-year` attribute instead. I tried this and it resolve the issue.
+- **'dates' attribute** - For the discography timeline, I used the sample code from the code used within the Resume mini project. The sample code used the `dates` attribute. However, the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) stated that this was invalid. When I looked on Slack, I saw that another student had the same issue, and the advice they received was to use the `data-year` attribute instead. I tried this and it resolved the issue.
 - **'Submit' button on *Book Us* form** - Once I entered the information and submitted the form, the form kept routing me through to the index.html page. After speaking with my mentor, he asked me to check the value of the `action` attribute of the `<form>` element. The issue was that the value I was using was `action="/"`. Once I changed this to `action="contact.html"` the issue was resolved.
 
 ## Deployment
 
-The hosting platform that I've used for my project is GitHub Pages. To deploy my website to GitHub pages, used the following steps:
+The hosting platform that I've used for my project is GitHub Pages. To deploy my website to GitHub pages, I used the following steps:
 
 1. Loaded the terminal window in my Cloud9 workspace.
-2. Initialised git using the `git init` command.
+2. Initialised Git using the `git init` command.
 3. Added all files to the Staging area (Git) using the `git add .` command.
 4. Committed the files to Git using the `git commit -m "Initial commit"` command.
 5. Created a new repository in GitHub called 'monkees-milestone-project-one'.
-6. Copied the below code from GitHub into my Cloud9 workspace:
-```git remote add origin https://github.com/hebs87/monkees-milestone-project-one.git```
-```git push -u origin master```
+6. Copied the below code from GitHub into the terminal window in my Cloud9 workspace:
+
+    ```git remote add origin https://github.com/hebs87/monkees-milestone-project-one.git```
+
+    ```git push -u origin master```
+
 7. Entered my GitHub username and password to push the files from Git to GitHub.
 8. Went into 'Settings' on my repository page in GitHub.
 9. Selected the 'master branch' option under the 'GitHub Pages' section.
@@ -172,19 +184,19 @@ https://hebs87.github.io/monkees-milestone-project-one/
 To run my code locally, users can download a local copy of my code to their desktop by completing the following steps:
 
 1. Go to [my GitHub repository](https://github.com/hebs87/monkees-milestone-project-one.git).
-2. Click on 'Clone or download'
-3. Click on 'Download ZIP'
+2. Click on 'Clone or download'.
+3. Click on 'Download ZIP'.
 4. Once dowloaded, extract the zip file's contents and run my website locally.
 
 ## Credits
 
 ### Content
 
-- The text for Davy Jones' band card was copied from [Davy Jones' Wikipedia page](https://en.wikipedia.org/wiki/Davy_Jones_(musician)
-- The text for Micky Dolenz's band card was copied from [Micky Dolenz's Wikipedia page](https://en.wikipedia.org/wiki/Micky_Dolenz)
-- The text for Michael Nesmith's band card was copied from [Michael Nesmith's Wikipedia page](https://en.wikipedia.org/wiki/Michael_Nesmith)
-- The text for Peter Tork's band card was copied from [Peter Tork's Wikipedia page](https://en.wikipedia.org/wiki/Peter_Tork)
-- The text for the 'Band History' section and the discography information was copied from [The Monkees' Wikipedia page](https://en.wikipedia.org/wiki/The_Monkees)
+- The text for Davy Jones' band card was copied from [Davy Jones' Wikipedia page](https://en.wikipedia.org/wiki/Davy_Jones_(musician)).
+- The text for Micky Dolenz's band card was copied from [Micky Dolenz's Wikipedia page](https://en.wikipedia.org/wiki/Micky_Dolenz).
+- The text for Michael Nesmith's band card was copied from [Michael Nesmith's Wikipedia page](https://en.wikipedia.org/wiki/Michael_Nesmith).
+- The text for Peter Tork's band card was copied from [Peter Tork's Wikipedia page](https://en.wikipedia.org/wiki/Peter_Tork).
+- The text for the 'Band History' section and the discography information was copied from [The Monkees' Wikipedia page](https://en.wikipedia.org/wiki/The_Monkees).
 
 ### Media
 - The photos used in this site were obtained either from the assets provided with the course content, or from Google images. I made sure any Google images were "free to use or share, even commercially".
@@ -192,7 +204,7 @@ To run my code locally, users can download a local copy of my code to their desk
 - The video track used in this site was obtained from the assets provided with the course content.
 - The link for the iframe content for the *'Monkeemania: The Very Best Of The Monkees'* album was obtained from [the album's Spotify page](https://open.spotify.com/album/1mOeF3Ew1vdmJLbGOG2CuP).
 - The link for the iframe content for the *'Monkees Greatest Hits'* album was obtained from [the album's Spotify page](https://open.spotify.com/playlist/7mbzl6fkxbayOw7OwjDMHG).
-- The follow button embed code was obtained from [the band's Spotify page](https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck)
+- The follow button embed code was obtained from [the band's Spotify page](https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck).
 
 ### Acknowledgements
 
