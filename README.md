@@ -154,6 +154,7 @@ I used the [W3C CSS Validator tool](https://jigsaw.w3.org/css-validator/#validat
 - **Burger icon** - The burger icon wasn't appearing once the fullscreen overlay menu was triggered. The reason for this is that the header in which the burger icon was in had a lower z-index than the overlay menu. To fix the issue, I gave the header a higher z-index value than the overlay menu.
 - **'dates' attribute** - For the discography timeline, I used the sample code from the code used within the Resume mini project. The sample code used the `dates` attribute. However, the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) stated that this was invalid. When I looked on Slack, I saw that another student had the same issue, and the advice they received was to use the `data-year` attribute instead. I tried this and it resolved the issue.
 - **'Submit' button on *Book Us* form** - Once I entered the information and submitted the form, the form kept routing me through to the index.html page. After speaking with my mentor, he asked me to check the value of the `action` attribute of the `<form>` element. The issue was that the value I was using was `action="/"`. Once I changed this to `action="contact.html"` the issue was resolved.
+- **'Submit' button on *Book Us* form** - Once I entered the information and submitted the form, I kept getting a '405 Not Allowed' error message, but this was only happening in the live environment and not the testing environment. I posted this in the Slack community and was given the advice to change the `method` value to `get` instead of `post`. This resolved the error.
 
 ## Deployment
 
@@ -210,5 +211,5 @@ To run my code locally, users can download a local copy of my code to their desk
 
 - I received inspiration for the full screen overlay menu when I was looking at websites for other bands. I came across the website for the band called [The Specials](https://www.thespecials.com/) and wanted to incorporate a similar menu in my project.
 - I received inspiration for the spinning music discs from my fiancee. When she looked at my website, she suggested this as some sylistic feedback.
-- I received some information from the Slack community to help me to fix an error with the `dates` attribute in the discography timeline.
+- Thanks to the Slack community to help me to fix an error with the `dates` attribute in the discography timeline, and to help me to fix the error with the Book Us form on the contacct.html page.
 - A special mention to my mentor, Dick Vlaanderen, for his feedback on my project's scope and design, and for hints on what information to include in my README.md file to justify my stylistic choices.
